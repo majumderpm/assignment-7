@@ -210,11 +210,37 @@ button {
 
 
 /* ============================ blog page style here */
-
-/* 
 .blog{
-  background-color: #171717;
-  width: 100%;
-  height: auto;
   padding: 100px 0;
-} */
+}
+.quction_list {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  padding: 50px 30px ;
+  color: white;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient( 92.49deg, rgba(255, 255, 255, 0.1) 0.18%, rgba(255, 255, 255, 0.05) 99.85% );
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+}
+.quction_list h5{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #9dffad;
+  letter-spacing: 1px;
+}
+.quction_list p{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.quction_list p strong{
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #9dffad;
+}
