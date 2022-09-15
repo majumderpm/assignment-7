@@ -27,6 +27,7 @@ const typeController = (e) => {
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
     errorCount ++;
+    // timeTaken ++;
     return display.removeChild(display.lastChild);
   }
 
@@ -68,7 +69,7 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTaken = Math.floor((finishTime - startTime) / 1000);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -91,6 +92,7 @@ const gameOver = () => {
   // restart everything
   startTime = null;
   errorCount = 0;
+  // timeTaken = 0;
   userText = "";
   display.classList.add("inactive");
 };
